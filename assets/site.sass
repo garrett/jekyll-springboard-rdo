@@ -1,0 +1,195 @@
+@import url('//fonts.googleapis.com/css?family=Lato:400,400i,700|Montserrat:400,700|Raleway:400,700')
+
+// Our variables
+$base-font-family: 'Lato', sans-serif
+$base-font-size:   16px
+$base-font-weight: 400
+$small-font-size:  $base-font-size * 0.875
+$base-line-height: 1.5
+
+$text-color:       #111
+$background-color: #fdfdfd
+$brand-color:      #2a7ae2
+
+$grey-color:       #888
+$grey-color-light: lighten($grey-color, 40%)
+$grey-color-dark:  darken($grey-color, 25%)
+
+$border-radius: 6px
+
+// Width of the content area
+$content-width:    60em
+
+//$nav-color: rgba(black, 0.3)
+$nav-text-color: white
+$nav-menu-color: linear-gradient(to top, #b60d0d 6px, rgba(#b60d0d,0.2) 6px, transparent 6px)
+$nav-active: linear-gradient(to top, #d00f0f 6px, rgba(#d00f0f,0.2) 6px, transparent 6px)
+
+$nav-mobile-menu: #720000
+$nav-padding: 1ex
+
+$author-card-color: #eee
+$author-card-padding: 2em
+
+// Import partials from the `minima` theme.
+@import "minima"
+
+// Import grid (see http://gridlex.devlint.fr/ for docs)
+@import "vendor/gridlex"
+
+@import "lib/nav"
+//@import "lib/search"
+@import "lib/blog"
+//@import "lib/social"
+@import "lib/pagination"
+@import "lib/stickyfooter"
+@import "lib/scrollbar-on"
+@import "lib/events"
+//@import "lib/stickyheader"
+
+///////////////////////////////////////////////////////////////////////
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Raleway', sans-serif
+
+h1, h2, h3, h4, h5, h6, nav a
+  color: #777
+
+header.masthead
+  background: url(../images/bg-lens.jpg) no-repeat fixed top center
+  background-size: 100%
+  text-align: center
+  font-size: 150%
+
+  >
+    .hgroup,
+    .nav-wrap
+      background: rgba(160, 0, 0, 0.7)
+      margin: 0 auto
+
+    .hgroup
+      padding: 3rem 0 0.5rem
+
+    .nav-wrap
+      padding: 0 0 2rem 0
+
+  nav
+    text-transform: uppercase
+    font-size: 12pt
+    font-family: Montserrat, sans-serif
+    margin: 0 auto
+    background: linear-gradient(to top, transparent 1px, #611 1px, #611 3px, transparent 3px)
+
+    li
+      float: none
+      display: inline-block
+      opacity: 0.7
+
+    .active
+      opacity: 1
+
+  h1, h2
+    margin: 1rem 1.5rem
+    color: #fff
+    white-space: nowrap
+
+  .logo
+    height: auto
+    width: 180px
+
+  @media screen and (min-width: $on-laptop + 1)
+    nav a
+
+    .hgroup, h1, h2
+      //display: flex
+
+    .hgroup
+      //padding: 1rem 0
+      align-items: baseline
+      //justify-content: space-between
+
+    nav
+      //background: rgba(black, 0.3)
+
+      // Shove search to the right
+      > ul
+        //display: flex
+
+        > li:last-child
+          //margin-left: auto
+
+    // Constrain heading to content width
+    .hgroup,
+    nav > ul
+      //max-width: $content-width
+      //margin: 0 auto
+
+  @media screen and (max-width: $on-laptop) and (min-width: $on-palm)
+    h1, h2
+      //display: inline-block
+
+    h2
+      //margin-left: 0
+
+article
+  max-width: 100%
+
+  img
+    max-width: 100%
+    height: auto
+
+html.intro
+  .wrapper
+    max-width: 100%
+
+    >
+      .intro-text,
+      .grid
+        max-width: $content-width
+        margin: 2rem auto
+
+  .intro
+    position: relative
+    background-color: black
+    color: white
+    margin: -2rem -2rem 0
+    font-size: 130%
+    padding: 2rem calc(50vw - #{$content-width / 2} + 2rem)
+    font-family: 'Raleway', sans-serif
+    font-size: 27px
+    font-weight: 700
+    text-align: center
+    background: #111 url(../images/bg-lens.jpg) no-repeat fixed top center
+    background-size: 100%
+
+    .button
+      font-family: Montserrat, sans-serif
+      text-decoration: none
+      padding: 15px 25px
+      font-size: 18px
+      display: inline-block
+      background: rgba(white, 0.1)
+      text-transform: uppercase
+      font-weight: 400
+      color: white
+
+      &:hover
+        background: rgba(white, 0.15)
+
+html.intro.frontpage
+  .intro-text
+    max-width: 37ex
+    position: relative
+    left: calc(100vw - 37ex - 25%)
+
+  .intro-stack
+    min-width: 177px
+    width: 40%
+    min-height: 186px
+    background: no-repeat url(../images/intro-stack.png) 12vw 100%
+    position: absolute
+    bottom: 6px
+    left: 0
+
+.lead
+  font-size: 120%

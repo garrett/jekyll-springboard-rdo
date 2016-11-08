@@ -1,0 +1,17 @@
+- title: Home
+  url: '/'
+
+- title: Blog
+  url: /blog/
+
+- title: Events
+  url: /events/
+
+- title: Community
+  url: /community/
+
+- title: Docs
+  url: /documentation/
+
+- title: Search
+  url: /search/
