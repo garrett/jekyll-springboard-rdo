@@ -17,9 +17,9 @@ RDO is a community of people using and deploying OpenStack on CentOS, Fedora, an
 
 Try out OpenStack in one of three ways:
 
-1. Deploy a production cloud with the [TripleO Quickstart.](/tripleo)  
-2. [TryStack.org](http://trystack.org)lets you try OpenStack with your own applications in our sandbox environment.  
-3. Spin up an all-in-one concept cloud with the [All-In-One Quickstart.](/install/quickstart)
+1. Deploy a production cloud with the [TripleO Quickstart](/tripleo).
+2. [TryStack.org](http://trystack.org) lets you try OpenStack with your own applications in our sandbox environment.  
+3. Spin up an all-in-one concept cloud with the [All-In-One Quickstart](/install/quickstart).
 {% endcapture %}
 
 
@@ -39,11 +39,11 @@ The conversation happens in several places:
 
 There are different ways to get involved:
 
-Help out with [packaging](/documentation/rdo-packaging/)one of the OpenStack projects.
+Help out with [packaging](/documentation/rdo-packaging/) one of the OpenStack projects.
 
-Tackle one of the [open issues](http://tm3.org/rdobugs)or[review](http://review.rdoproject.org)a pending changeset.
+Tackle one of the [open issues](http://tm3.org/rdobugs) or [review](http://review.rdoproject.org) a pending changeset.
 
-Check out the [current status](http://dashboards.rdoproject.org)of the project.
+Check out the [current status](http://dashboards.rdoproject.org) of the project.
 {% endcapture %}
 
 
@@ -53,7 +53,7 @@ Check out the [current status](http://dashboards.rdoproject.org)of the project.
 {:.lead}
 RDO project is made of people like you! If you want to help out, [here's how](/community) you can get involved.
 
-If you are interested in our community, please have a look at our [Code Review process](https://review.rdoproject.org/) and follow the discussion on the [RDO mailing list](https://www.redhat.com/mailman/listinfo/rdo-list)where the discussion covers topics like installing, running, and using OpenStack on Red&nbsp;Hat based distributions.
+If you are interested in our community, please have a look at our [Code Review process](https://review.rdoproject.org/) and follow the discussion on the [RDO mailing list](https://www.redhat.com/mailman/listinfo/rdo-list) where the discussion covers topics like installing, running, and using OpenStack on Red&nbsp;Hat based distributions.
 
 Want to update this documentation? Great! All you need is a GitHub account, then visit the link at the very bottom of each page, entitled "Edit this page on GitHub".
 
@@ -90,8 +90,8 @@ Come to one of the main [events](events) where some of us will be. Follow us on 
 {% endcapture %}
 
 {% comment %}
-FYI: Mardkdown doesn't like being rendered within HTML tag blocks, 
-so we have to resort to using HTML snippets below
+FYI: Markdown doesn't like being rendered within HTML tag blocks, 
+so we have to resort to using HTML snippets below for structure
 {% endcomment %}
 
 <div class="intro">
