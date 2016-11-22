@@ -14,17 +14,11 @@ wiki_last_updated: 2015-07-16
 
 Since RDO sticks closely to the upstream OpenStack project, the documentation at [docs.openstack.org](http://docs.openstack.org) will also prove helpful. If you've come across useful tips for resolving issues on OpenStack, or if you're interested in sharing details of your deployment, please consider sharing this information with the community at our [troubleshooting](/troubleshooting/) and [user stories](/user-stories/) pages.
 
-<div class="splits">
-<div class="split-third with-more">
-
 ## Getting started
 
 * [TripleO quickstart](/tripleo) &ndash; production deployment, with HA
 * [Packstack quickstart](/install/quickstart) &ndash; proof of concept for single node
 * [Try out OpenStack at TryStack.org](http://trystack.org/)
-
-</div>
-<div class="split-third">
 
 ## About RDO
 
@@ -32,13 +26,7 @@ Since RDO sticks closely to the upstream OpenStack project, the documentation at
 * [Mailing lists](/community/mailing-lists/)
 * [Legal & privacy](/legal/)
 
-</div>
-</div>
-
 ## Administration
-
-<div class="splits">
-<div class="split-third with-more">
 
 ### Installation and configuration
 
@@ -48,9 +36,6 @@ Since RDO sticks closely to the upstream OpenStack project, the documentation at
 * [More&hellip;](/install/){:.more}
 {:.with-more-link}
 
-</div>
-<div class="split-third with-more">
-
 ### Networking
 
 * [Neutron with an existing external network](/networking/neutron-with-existing-external-network/)
@@ -59,8 +44,6 @@ Since RDO sticks closely to the upstream OpenStack project, the documentation at
 * [More&hellip;](/documentation/networking/){:.more}
 {:.with-more-link}
 
-</div>
-<div class="split-third">
 
 ### Storage
 
@@ -70,13 +53,8 @@ Since RDO sticks closely to the upstream OpenStack project, the documentation at
 * [More&hellip;](/storage/){:.more}
 {:.with-more-link}
 
-</div>
-</div>
 
 ## Development
-
-<div class="splits">
-<div class="split-third with-more">
 
 ### Packaging
 
@@ -84,8 +62,6 @@ Since RDO sticks closely to the upstream OpenStack project, the documentation at
 * [RDO packaging guidelines](/documentation/rdo-packaging-guidelines)
 * [`rdopkg` documentation](https://github.com/openstack-packages/rdopkg)
 
-</div>
-<div class="split-third">
 
 ### Testing
 
@@ -93,8 +69,6 @@ Since RDO sticks closely to the upstream OpenStack project, the documentation at
 * [Open
   tickets](https://bugzilla.redhat.com/buglist.cgi?product=RDO&query_format=advanced&bug_status=NEW&bug_status=ASSIGNED)
 
-</div>
-</div>
 
 ## Upstream documentation
 
