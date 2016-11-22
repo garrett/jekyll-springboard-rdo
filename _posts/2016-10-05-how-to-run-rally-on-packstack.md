@@ -62,6 +62,7 @@ Let's create one of the sample benchmark task, for example task for boot and del
 
 [2.] Copy this to the `boot-and-delete.json` file:
 
+{% raw %}
 ```
 {% set flavor_name = flavor_name or "m1.tiny" %}
 {% set image_name = image_name or "cirros" %}
@@ -118,6 +119,7 @@ Let's create one of the sample benchmark task, for example task for boot and del
     ]
 }
 ```
+{% endraw %}
 
 [3.] Run the task:
 
