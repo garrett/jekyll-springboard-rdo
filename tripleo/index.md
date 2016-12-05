@@ -6,16 +6,16 @@ wiki_revision_count: 49
 wiki_last_updated: 2016-01-11
 ---
 
-* [Virtual Environment Quickstart](#veqs)
-* [Quickstart USB Key](/tripleo/oooq-usbkey)
-* [Further reading](#reading)
-* [Presentations](#presentations)
+1. toc
+{:toc}
 
-# <a name="qs">TripleO quickstart</a>
+# TripleO quickstart
+{:#qs}
 
 TripleO is an OpenStack Deployment & Management tool. It is developed upstream as the [OpenStack TripleO](http://wiki.openstack.org/wiki/TripleO) project, but we have a special love for it in RDO-land.
 
-## <a name="veqs">Virtual environment quickstart</a>
+## Virtual environment quickstart
+{:#veqs}
 
 There is an [Ansible-based](https://www.ansible.com/) project called [tripleo-quickstart](https://github.com/openstack/tripleo-quickstart) whose main goal is to quickly stand up TripleO environments using an image-based undercloud approach similar to the [OPNFV Apex project](http://artifacts.opnfv.org/apex/docs/installation-instructions/).
 
@@ -49,7 +49,8 @@ The TripleO USB key combines tripleo-quickstart and prebuilt RDO OpenStack image
 
 *    [Learn more about the TripleO USB key](/tripleo/oooq-usbkey)
 
-## <a name="reading">Further reading</a>
+## Further reading
+{:#reading}
 
 Upstream TripleO documentation:
 
@@ -63,7 +64,8 @@ TripleO (RDO-Manager) HA setup:
 
 * [TripleO YouTube Channel](https://www.youtube.com/channel/UCNGDxZGwUELpgaBoLvABsTA/)
 
-## <a name="presentations">Presentations</a>
+## Presentations
+{:#presentations}
 
 tripleo-quickstart demo (March 9, 2016):
 
