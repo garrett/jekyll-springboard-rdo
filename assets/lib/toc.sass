@@ -1,0 +1,73 @@
+$toc-color: #994 !default
+$toc-column: 20rem !default
+$toc-indent: 2ex !default
+$toc-margin: 2rem 0 !default
+$toc-size: 100% !default
+$toc-size-top: 110% !default
+$toc-spacer: 1.5ex !default
+
+#markdown-toc
+  color: $toc-color
+  margin: $toc-margin
+  padding: 0
+  columns: $toc-column
+  -moz-columns: $toc-column
+
+  a
+    font-size: $toc-size
+
+  /* Apply to lists of depth >= 2
+  ol ol
+    padding: 0 0 0 $toc-indent
+    margin-left: 0
+
+    li
+      list-style-position: outside
+      text-indent: 0
+      list-style-type: lower-latin
+      padding-bottom: #{$toc-spacer / 2}
+
+    /* Lists depth >= 3
+    ol
+
+      li
+        list-style-type: lower-roman
+        padding-bottom: 0
+
+      /* Lists depth >= 4
+      ol
+        li
+          list-style-type: upper-roman
+
+        /* Lists depth >= 5
+        ol li
+          list-style-type: upper-latin
+
+  > li
+    /* Hide the first level styles of links
+    list-style: none
+
+    /* Hide the first level of links (H1)
+    > a
+      display: none
+
+    > ol
+      /* There should be no margin on the second level (H2) group
+      /* (Note: This is the first level visible)
+      margin: 0
+
+      > li
+        /* Continue special-casing second-level headlines (H2)
+        overflow: hidden
+        padding: 0 0 $toc-spacer $toc-indent
+        text-indent: -#{$toc-indent}
+        position: relative
+        list-style-position: inside
+
+        > ol
+          padding-top: #{$toc-spacer / 4}
+
+        /* Second level links (H2)
+        > a
+          font-weight: bold
+          font-size: $toc-size-top
