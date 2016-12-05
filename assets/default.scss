@@ -39,6 +39,7 @@ $content-width:    60em;
 @import "lib/search";       // Styles for the search page
 @import "lib/blog";         // Default blog style
 @import "lib/pagination";   // Blog pagination
+@import "lib/toc";          // Table of contents
 @import "lib/stickyfooter"; // Stretch page with footer on bottom
 @import "lib/scrollbar-on"; // Stop page shift by keeping scrollbar on
 //@import "lib/events";       // Events and upcoming support.
