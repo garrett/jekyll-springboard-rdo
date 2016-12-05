@@ -40,21 +40,37 @@
 
 
   <body id="page-top">
-    {% if site.rewrite_images == false %}
-      {{ content }}
-    {% else %}
-      {% assign img_untreated = 'img src="/' %}
-      {% assign baseurlslash = site.baseurl | append: "/" %}
-      {% assign img_baseurl = img_untreated | replace: "/", baseurlslash %}
-      {% assign rewritten = content | replace: img_untreated, img_baseurl %}
-
+    {% capture rewritten_content %}
       {% if site.baseurl != "" %}
+        {% assign rewritten = content %}
+        {% assign baseurlslash = site.baseurl | append: "/" %}
         {% assign doublebase = site.baseurl | append: site.baseurl %}
-        {{ rewritten | replace: doublebase, site.baseurl }}
-      {% else %}
+
+        {% if site.rewrite_links != false %}
+          {% assign a_untreated = 'a href="/' %}
+          {% assign a_baseurl = a_untreated | replace: "/", baseurlslash %}
+
+          {% assign rewritten = rewritten
+            | replace: a_untreated, a_baseurl
+            | replace: doublebase, site.baseurl
+          %}
+        {% endif %}
+
+        {% if site.rewrite_images != false %}
+          {% assign img_untreated = 'img src="/' %}
+          {% assign img_baseurl = img_untreated | replace: "/", baseurlslash %}
+
+          {% assign rewritten = rewritten
+            | replace: img_untreated, img_baseurl
+            | replace: doublebase, site.baseurl
+          %}
+        {% endif %}
+
         {{ rewritten }}
+      {% else %}
+        {{ content }}
       {% endif %}
-    {% endif %}
+    {% endcapture %}{{ rewritten_content }}
   </body>
 
 </html>
