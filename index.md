@@ -23,17 +23,6 @@ Try out OpenStack in one of three ways:
 {% endcapture %}
 
 
-{% capture join %}
-## Join the conversation
-
-The conversation happens in several places:
-
-- On the [mailing lists](/community/mailing-lists)
-- #RDO on the Freenode IRC network
-- [ask.openstack.org](http://ask.openstack.org)
-{% endcapture %}
-
-
 {% capture hack %}
 ## Hack on it
 
@@ -44,6 +33,17 @@ Help out with [packaging](/documentation/rdo-packaging/) one of the OpenStack pr
 Tackle one of the [open issues](http://tm3.org/rdobugs) or [review](http://review.rdoproject.org) a pending changeset.
 
 Check out the [current status](http://dashboards.rdoproject.org) of the project.
+{% endcapture %}
+
+
+{% capture join %}
+## Join the conversation
+
+The conversation happens in several places:
+
+- On the [mailing lists](/community/mailing-lists)
+- #RDO on the Freenode IRC network
+- [ask.openstack.org](http://ask.openstack.org)
 {% endcapture %}
 
 
@@ -108,8 +108,8 @@ so we have to resort to using HTML snippets below for structure
 
 <div class="grid redline">
   <div class="col-4">{{ try | markdownify }}</div>
-  <div class="col-4">{{ join | markdownify }}</div>
   <div class="col-4">{{ hack | markdownify }}</div>
+  <div class="col-4">{{ join | markdownify }}</div>
   <!--<div class="col-6">{{ involved | markdownify }}</div>-->
   <div class="col-6">{{ whatis | markdownify }}</div>
   <div class="col-6">{{ happening | markdownify }}</div>
