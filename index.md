@@ -106,7 +106,7 @@ so we have to resort to using HTML snippets below for structure
   <div class="intro-text">{{ intro | markdownify }}</div>
 </div>
 
-<div class="grid">
+<div class="grid redline">
   <div class="col-4">{{ try | markdownify }}</div>
   <div class="col-4">{{ join | markdownify }}</div>
   <div class="col-4">{{ hack | markdownify }}</div>

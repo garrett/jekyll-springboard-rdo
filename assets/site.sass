@@ -170,5 +170,35 @@ html.intro.frontpage
     bottom: 6px
     left: calc(50% - 177px * 2.25)
 
+html.frontpage
+  .grid > div
+    margin-top: 2rem
+
+    h2
+      font-size: 160%
+
 .lead
   font-size: 120%
+
+.grid.redline
+  >div
+    position: relative
+    overflow: hidden
+
+    h1, h2, h3
+      display: inline-block
+      background: #fdfdfd
+      padding-left: 0.75rem
+      margin-left: -0.75rem
+      padding-right: 0.75rem
+      margin-right: -0.75rem
+
+      &:before
+        display: block
+        position: absolute
+        content: "-"
+        top: 0
+        right: 1rem
+        width: 100%
+        background: linear-gradient(to right, transparent 1rem,rgba($background-color, 0.9)), linear-gradient($background-color 49%, red 50%, red 51%, $background-color 52%)
+        z-index: -1
