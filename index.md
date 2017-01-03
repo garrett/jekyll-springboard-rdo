@@ -66,8 +66,7 @@ The Puppet modules used in packstack are on [GitHub](https://github.com/packstac
 {% capture whatis %}
 ## What is RDO?
 
-![An Openstack Distribution](/images/wiki/Openstack-distribution.png?1460046750)
-
+![An Openstack Distribution](/images/wiki/Openstack-distribution.png){:.pull-right}
 RDO is a community of people using and deploying OpenStack on CentOS, Fedora, and Red Hat Enterprise Linux. We have [documentation to help get started](/documentation/), [mailing lists](/community/mailing-lists/) where you can connect with other users, and [community-supported packages](/install/quickstart/) of the most up-to-date OpenStack releases available for download.
 
 If you are looking for enterprise-level support, or information on partner certification, Red Hat also offers [Red Hat OpenStack Platform](//redhat.com/en/technologies/linux-platforms/openstack-platform).
