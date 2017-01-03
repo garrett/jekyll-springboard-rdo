@@ -79,6 +79,13 @@ OpenStack relies on the underlying operating system and hypervisor — and what 
 {% capture happening %}
 ## What's happening?
 
+{% include twitter.html id="482610699122638848" account="RDOcommunity" %}
+{% endcapture%}
+
+{% capture joinus %}
+
+## Come join us
+
 Come to one of the main [events](events) where some of us will be. Follow us on [Twitter](http://twitter.com/rdocommunity/), [Facebook](http://facebook.com/rdocommunity), and [Google+](https://plus.google.com/communities/110409030763231732154). Subscribe to the [rdo-list mailing list](http://www.redhat.com/mailman/listinfo/rdo-list) for technical questions, or to the [newsletter mailing list](http://www.redhat.com/mailman/listinfo/rdo-newsletter) for monthly community updates.
 
 {:.social-icons}
@@ -103,7 +110,8 @@ so we have to resort to using HTML snippets below for structure
   <div class="col-4">{{ try | markdownify }}</div>
   <div class="col-4">{{ join | markdownify }}</div>
   <div class="col-4">{{ hack | markdownify }}</div>
-  <div class="col-6">{{ involved | markdownify }}</div>
+  <!--<div class="col-6">{{ involved | markdownify }}</div>-->
   <div class="col-6">{{ whatis | markdownify }}</div>
-  <div class="col-12">{{ happening | markdownify }}</div>
+  <div class="col-6">{{ happening | markdownify }}</div>
+  <div class="col-12">{{ joinus | markdownify }}</div>
 </div>
