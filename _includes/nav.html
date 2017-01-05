@@ -1,4 +1,5 @@
 {% assign navs = include.nav | default: site.data.navigation %}
+{% assign style = include.style | default: "ul" %}
 
 {% unless include.wrap == false %}
   <input type="checkbox" id="nav-toggle" class="nav-check" hidden="hidden">
@@ -7,7 +8,18 @@
   <label for="nav-toggle" class="nav-screen"></label>
 {% endunless %}
 
-  <ul class="nav-menu">
+{% case style %}
+{% when "ol" %}
+  {% assign tag_group = "ol" %}
+  {% assign tag_item = "li" %}
+  {% assign tag_label = "span" %}
+{% else %}
+  {% assign tag_group = "ul" %}
+  {% assign tag_item = "li" %}
+  {% assign tag_label = "span" %}
+{% endcase %}
+
+  <{{ tag_group }} class="nav-menu">
     {% for nav in navs %}
       {% capture vars %}
         {% if nav.url == page.url | replace: ".html", "/" %}
@@ -44,7 +56,7 @@
         {% endif %}
       {% endcapture %}{% assign vars = nil %}
 
-      <li class="nav--{{ nav.title | slugify | default: "home" }}{{ nav_class }}{{ navgroup }}{{ active }}" role="menuitem">
+      <{{ tag_item }} class="nav--{{ nav.title | slugify | default: "home" }}{{ nav_class }}{{ navgroup }}{{ active }}" role="menuitem">
         {% if nav.url %}
           <a href="{{ nav.url | prepend: site.baseurl }}">{{
             nav_icon | strip
@@ -52,15 +64,15 @@
             nav_label | strip
             }}</a>
         {% else %}
-          <span class="not-a-link">{{ nav.title }}</span>
+          <{{ tag_label }} class="not-a-link">{{ nav.title }}</{{ tag_label }}>
         {% endif %}
         {% if nav.nav %}
-          {% include nav.html nav=nav.nav wrap=false %}
+          {% include nav.html nav=nav.nav wrap=false style=style %}
         {% endif %}
-      </li>
+      </{{ tag_item }}>
     {% endfor %}
 
-  </ul>
+  </{{ tag_group }}>
 
 {% unless include.wrap == false %}
   </nav>
