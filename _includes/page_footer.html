@@ -1,0 +1,29 @@
+<footer>
+  {% if site.data.footer.nav %}
+    {% include nav.html nav=site.data.footer.nav wrap=false %}
+  {% endif %}
+
+  <div class="grid-top">
+
+    <div class="col copyright">
+      {% if site.data.footer.copyright %}
+        {{ site.data.footer.copyright }}
+      {% else %}
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+      {% endif %}
+    </div>
+
+    {% unless site.github_edit == false or site.data.footer.github_edit == false %}
+      <div class="col github">
+        {% include github.html %}
+      </div>
+    {% endunless %}
+
+    {% if site.data.footer.blurb %}
+      <div class="col blurb">
+        {{ site.data.footer.blurb | lstrip | rstrip | markdownify }}
+      </div>
+    {% endif %}
+
+  </div>
+</footer>
