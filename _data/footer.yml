@@ -1,0 +1,53 @@
+copyright: "&copy; 2014 - 2017 RDO"
+blurb: |
+ ![](/images/shadowman.png)
+
+ **RDO** is a **Red Hat**-sponsored community project
+
+nav:
+  - title: Docs
+    nav:
+    - title: Download
+      url: /install/quickstart
+
+    - title: Common questions
+      url: /rdo/faq
+
+    - title: Troubleshooting
+      url: /troubleshooting/
+
+    - title: About RDO
+      url: /rdo/
+
+  - title: Use RDO
+    nav:
+    - title: Quickstart
+      url: /install/quickstart
+
+    - title: Releases
+      url: /rdo/release-cadence
+
+    - title: Trunk builds
+      url: http://trunk.rdoproject.org/
+
+  - title: Community
+    nav:
+    - title: Participate
+      url: /community/
+
+    - title: Ask (Q&amp;A)
+      url: http://ask.rdoproject.org/
+
+    - title: Browse open issues
+      url: https://bugzilla.redhat.com/buglist.cgi?product=RDO&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED
+
+    - title: Report a problem
+      url: https://bugzilla.redhat.com/enter_bug.cgi?product=RDO
+
+  - title: Support
+    nav:
+    - title: Red Hat OpenStack Platform
+      url: https://access.redhat.com/products/red-hat-openstack-platform/
+
+    - title: Contact us
+      url: https://www.redhat.com/mailman/listinfo/rdo-list
